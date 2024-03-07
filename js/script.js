@@ -92,8 +92,24 @@ function ribaltone(string) {
   return stringa;
   
 }
-console.log(ribaltone("ciao"));
+console.log(ribaltone("Ugo De Ughi"));
 
 //////////////////////milestone 4
 
+const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+const mix = [];
+index = 0;
+while (index < numbers.length - 1) {
+  mixArray();
+}
 
+function mixArray() {
+
+  mix.push(numbers[index],letters[index]);
+  index++;
+  return mix;
+
+}
+
+console.log(mix);
