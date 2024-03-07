@@ -8,22 +8,22 @@ const zucchine = [
   },
   {
     varietà: "zucchino romanesco", 
-    peso: 400,
+    peso: 40,
     lunghezza: 15
   },
   {
     varietà: "zucchino ortolano di Faenza",
-    peso: 300,
+    peso: 30,
     lunghezza: 10
   },
   {
     varietà: "zucchino siciliano",
-    peso: 200,
+    peso: 20,
     lunghezza: 5
   },
   {
     varietà: "zucchino toscano",
-    peso: 100,
+    peso: 10,
     lunghezza: 2
   },
   {
@@ -33,7 +33,7 @@ const zucchine = [
   },
   {
     varietà: "zucchino calabrese",
-    peso: 30,
+    peso: 300,
     lunghezza: 18
   },
   {
@@ -43,12 +43,12 @@ const zucchine = [
   },
   {
     varietà: "zucchino ligure",
-    peso: 10,
+    peso: 100,
     lunghezza: 30
   },
   {
     varietà: "zucchino veneto",
-    peso: 5,
+    peso: 150,
     lunghezza: 17
   }
 ]
@@ -72,6 +72,7 @@ zucchine.forEach(element => {
   if (element.lunghezza > 15) {
     zucchineLunghe.push(element);
     pesoTotLunghe = pesoTotLunghe + element.peso;
+
   } else {
     zucchineCorte.push(element);
     pesoTotCorte = pesoTotCorte + element.peso;
@@ -82,5 +83,17 @@ console.log(zucchineCorte);
 console.log(zucchineLunghe);
 console.log(pesoTotCorte);
 console.log(pesoTotLunghe);
+
+//////////////////////milestone 3
+
+function ribaltone(string) {
+
+  let stringa = string.split("").reverse().join("");
+  return stringa;
+  
+}
+console.log(ribaltone("ciao"));
+
+//////////////////////milestone 4
 
 
