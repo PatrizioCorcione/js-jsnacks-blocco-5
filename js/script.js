@@ -100,6 +100,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 
 function mixArray(numbers, letters) {
+
   const mix = [];
   
   for (let i = 0; i < numbers.length; i++) {
@@ -107,9 +108,27 @@ function mixArray(numbers, letters) {
   }
   
   return mix;
+
 }
 
 console.log(mixArray(numbers, letters));
 
 //////////////////////milestone 5
 
+
+const min = Math.floor(Math.random() * 5);
+const max = Math.floor(Math.random() * numbers.length - min + 1) + min;
+
+function range(min, max, numbers) {
+  let rangeArray = [];
+
+  rangeArray = numbers.filter((element,index) => {
+    return index >= min && index <= max;
+  });
+
+  return rangeArray;
+}
+
+console.log(min);
+console.log(max);
+console.log(range(min, max, letters));
